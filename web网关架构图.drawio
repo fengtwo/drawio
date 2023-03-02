@@ -1,4 +1,4 @@
-<mxfile modified="2023-03-02T08:05:53.741Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="aAu2St545JIDTh_6ymW4" version="20.8.1" type="github" pages="3">
+<mxfile modified="2023-03-02T08:06:55.333Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="mUZWqAYwKwVtt0l_dOyk" version="20.8.1" type="github" pages="3">
   <diagram id="QHqpLSU-fdE5Svy4Iw9_" name="架构图">
     <mxGraphModel dx="1314" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -88,7 +88,7 @@
         <mxCell id="0kI2cozcI7CMRLFcSVNO-49" value="WAAP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="160" y="130" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6QE7lQpZtBJtU-MwEa37-3" value="&lt;span style=&quot;font-size: 6px;&quot;&gt;PgSQL&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 6px;&quot;&gt;&lt;span style=&quot;font-size: 6px;&quot;&gt;后续切换为Clickhouse&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" parent="1" vertex="1">
+        <mxCell id="6QE7lQpZtBJtU-MwEa37-3" value="&lt;span style=&quot;font-size: 6px;&quot;&gt;PgSQL /&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 6px;&quot;&gt;Clickhouse&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" parent="1" vertex="1">
           <mxGeometry x="540" y="560.5" width="140" height="10" as="geometry" />
         </mxCell>
         <mxCell id="vspUS4Y1iWkkkbIc6cM_-21" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;strokeColor=#666666;strokeWidth=2;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="0kI2cozcI7CMRLFcSVNO-8">
