@@ -1,4 +1,4 @@
-<mxfile modified="2023-03-02T08:09:27.068Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="FEjMW0UohyeYHW8VHRG-" version="20.8.1" type="github" pages="3">
+<mxfile modified="2023-03-02T08:23:49.769Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="pj_ajfzkabVLoaX2H7g-" version="20.8.1" type="github" pages="4">
   <diagram id="QHqpLSU-fdE5Svy4Iw9_" name="架构图">
     <mxGraphModel dx="1314" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -105,13 +105,111 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="Page-1">
+  <diagram id="Ht1M8jgEwFfnCIfOTk4-" name="组件介绍">
     <mxGraphModel dx="1314" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="WzUDPW5uthaogsePawCD-2" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;组件简单介绍&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;引擎：&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Openresty：&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);&quot;&gt;基于nginx与lua的高性能代理服务器，检测功能的核心实现；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Bypass：起过载保护作用，当Openresty进程挂掉后，网络流量可以正常转发，而不影响业务；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Event：主要负责引擎与控制端的通信（Http协议），与Openresty通过共享内存通信；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Logd：负责检测日志的记录，写入到LogStore中；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;控制面：&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Pilot：控制端的主要程序，负责规则生成与下发，引擎的状态监测，监测日志分析告警等；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Uprade：负责控制端升级，配置备份与恢复；&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="WzUDPW5uthaogsePawCD-2" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;组件简单介绍&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;引擎：&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Openresty：&lt;/span&gt;&lt;span style=&quot;border-color: var(--border-color); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; color: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);&quot;&gt;基于nginx与lua的高性能代理服务器，检测功能的核心实现；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Bypass：起过载保护作用，当Openresty进程挂掉后，网络流量可以正常转发，而不影响业务；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Event：主要负责引擎与控制端的通信（Http协议），与Openresty通过共享内存通信；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Logd：负责检测日志的记录，写入到LogStore中；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;控制面：&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Pilot：控制端的主要程序，负责规则生成与下发，引擎的状态监测，监测日志分析告警等；&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Uprade：负责控制端升级，配置备份与恢复；&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="180" width="560" height="210" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="2LwcnpU5y4H_kz4jwnWc" name="进程介绍">
+    <mxGraphModel dx="1095" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PeD444H6cPswoVOKIjSt-1" value="" style="rounded=1;whiteSpace=wrap;html=1;glass=0;dashed=1;dashPattern=8 8;shadow=0;strokeColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="130" y="160" width="570" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-2" value="" style="rounded=1;whiteSpace=wrap;html=1;glass=0;fillColor=#F5F9FF;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="160" y="480" width="380" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-3" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=none;glass=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="200" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;strokeColor=#82B366;fillColor=#60a917;shadow=0;" edge="1" parent="1" source="PeD444H6cPswoVOKIjSt-5" target="PeD444H6cPswoVOKIjSt-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="210" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-6" value="Openresty" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="229.17" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-7" value="Event Agent" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="269.17" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-8" value="Bypass" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;connectable=0;" vertex="1" parent="1">
+          <mxGeometry x="350" y="229.17" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#666666;strokeWidth=2;curved=1;dashed=1;" edge="1" parent="1" source="PeD444H6cPswoVOKIjSt-10" target="PeD444H6cPswoVOKIjSt-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-10" value="Logd" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="269.17" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-11" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="200" y="495.5" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-12" value="App Gateway" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+          <mxGeometry x="800" y="247.50000000000003" width="90" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-13" value="Uprade" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="390" y="513" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-14" value="Control Server&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="290" y="513" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PeD444H6cPswoVOKIjSt-7" target="PeD444H6cPswoVOKIjSt-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-16" value="Log Store" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="570" y="485" width="70" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-17" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1">
+          <mxGeometry x="-0.25" y="40" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="268.48" as="sourcePoint" />
+            <mxPoint x="240" y="268.5100000000001" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="268.51" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-18" value="Engine" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="170" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-19" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Control Plane&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="450" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-20" value="控制端" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="515" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-21" value="Ingress&lt;br&gt;traffic" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;dashed=1;dashPattern=8 8;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="30" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-22" value="Egress&lt;br&gt;traffic" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;dashed=1;dashPattern=8 8;opacity=80;" vertex="1" parent="1">
+          <mxGeometry x="710" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-23" value="WAAP" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=0;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="160" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-24" value="&lt;span style=&quot;font-size: 6px;&quot;&gt;PgSQL /&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-size: 6px;&quot;&gt;Clickhouse&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=6;" vertex="1" parent="1">
+          <mxGeometry x="540" y="560.5" width="140" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-25" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;strokeColor=#666666;strokeWidth=2;curved=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="PeD444H6cPswoVOKIjSt-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="460" as="sourcePoint" />
+            <mxPoint x="310" y="300.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PeD444H6cPswoVOKIjSt-26" value="&lt;span style=&quot;border-color: var(--border-color); font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Discovery&lt;/span&gt;&lt;br style=&quot;border-color: var(--border-color); font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;&lt;span style=&quot;border-color: var(--border-color); font-size: 12px; text-align: left; background-color: rgb(251, 251, 251);&quot;&gt;Configuration&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PeD444H6cPswoVOKIjSt-25">
+          <mxGeometry x="-0.3645" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
